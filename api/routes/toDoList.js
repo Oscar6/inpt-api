@@ -5,6 +5,7 @@ const mongoose = require('mongoose');
 const ToDoList = require('../models/toDoList');
 
 router.get('/', (req, res, next) => {
+    console.log('working')
     ToDoList.find()
         .select('_id title description')
         .exec()
@@ -19,6 +20,7 @@ router.get('/', (req, res, next) => {
                     }
                 })
             };
+            console.log(response)
             res.status(200).json(response);
         })
         .catch(err => {

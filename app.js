@@ -5,7 +5,7 @@ const mongoose = require('mongoose');
 
 const toDoListRoutes = require('./api/routes/toDoList');
 
-mongoose.connect('mongodb+srv://dbUser:dbUser1@inpt-4ovkd.mongodb.net/test?retryWrites=true', {
+mongoose.connect('mongodb+srv://dbUser:dbUser1@inptdb-4ovkd.mongodb.net/codingchallenge?retryWrites=true', {
     useNewUrlParser: true
 });
 mongoose.Promise = global.Promise;

@@ -49,6 +49,7 @@ router.post('/', (req, res, next) => {
             //         _id: result._id
             //     }
             // })
+            // issue not resolved
             res.redirect('/toDoList')
         })
         .catch(err => {
